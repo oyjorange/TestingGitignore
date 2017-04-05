@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A26906589C060DDD4FC0499 /* libPods-TestingIgnore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE41B7A9C4879A8B1044D738 /* libPods-TestingIgnore.a */; };
 		C222DFF41E94D14C006EE94F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C222DFF31E94D14C006EE94F /* main.m */; };
 		C222DFF71E94D14C006EE94F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C222DFF61E94D14C006EE94F /* AppDelegate.m */; };
 		C222DFFA1E94D14C006EE94F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C222DFF91E94D14C006EE94F /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		023739EBA38E65ABBC8596B6 /* Pods-TestingIgnore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingIgnore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestingIgnore/Pods-TestingIgnore.debug.xcconfig"; sourceTree = "<group>"; };
+		2D18ABC691D686AA55EDD10C /* Pods-TestingIgnore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingIgnore.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestingIgnore/Pods-TestingIgnore.release.xcconfig"; sourceTree = "<group>"; };
 		C222DFEF1E94D14C006EE94F /* TestingIgnore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingIgnore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C222DFF31E94D14C006EE94F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C222DFF51E94D14C006EE94F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		C222DFFE1E94D14C006EE94F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C222E0011E94D14C006EE94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C222E0031E94D14C006EE94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE41B7A9C4879A8B1044D738 /* libPods-TestingIgnore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestingIgnore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A26906589C060DDD4FC0499 /* libPods-TestingIgnore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		884426D2210A57F85FD9110A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				023739EBA38E65ABBC8596B6 /* Pods-TestingIgnore.debug.xcconfig */,
+				2D18ABC691D686AA55EDD10C /* Pods-TestingIgnore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB370E56D65B1A586F94AEEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE41B7A9C4879A8B1044D738 /* libPods-TestingIgnore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C222DFE61E94D14C006EE94F = {
 			isa = PBXGroup;
 			children = (
 				C222DFF11E94D14C006EE94F /* TestingIgnore */,
 				C222DFF01E94D14C006EE94F /* Products */,
+				884426D2210A57F85FD9110A /* Pods */,
+				BB370E56D65B1A586F94AEEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C222E0061E94D14C006EE94F /* Build configuration list for PBXNativeTarget "TestingIgnore" */;
 			buildPhases = (
+				FB67B884D421C4825FC24659 /* [CP] Check Pods Manifest.lock */,
 				C222DFEB1E94D14C006EE94F /* Sources */,
 				C222DFEC1E94D14C006EE94F /* Frameworks */,
 				C222DFED1E94D14C006EE94F /* Resources */,
+				C3BB7187A721E223B35F8A01 /* [CP] Embed Pods Frameworks */,
+				954813E04E8653FC793F9DA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		954813E04E8653FC793F9DA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestingIgnore/Pods-TestingIgnore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3BB7187A721E223B35F8A01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestingIgnore/Pods-TestingIgnore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB67B884D421C4825FC24659 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C222DFEB1E94D14C006EE94F /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		C222E0071E94D14C006EE94F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 023739EBA38E65ABBC8596B6 /* Pods-TestingIgnore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 559F36FNHV;
@@ -281,6 +357,7 @@
 		};
 		C222E0081E94D14C006EE94F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D18ABC691D686AA55EDD10C /* Pods-TestingIgnore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 559F36FNHV;
