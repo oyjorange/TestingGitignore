@@ -20,16 +20,13 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - JSONModel (1.0.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
-  - JSONModel (~> 1.0.2)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
 
-PODFILE CHECKSUM: c2987478247b1cf619fb50c2d544da03413592ce
+PODFILE CHECKSUM: 6aecd1931a332d4a0ad3519aa3ce28ccf472f935
 
 COCOAPODS: 1.1.1

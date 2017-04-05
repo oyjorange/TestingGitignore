@@ -8,8 +8,6 @@ target 'TestingIgnore' do
 
 pod 'AFNetworking', '~> 2.0'
 
-pod 'JSONModel', '~> 1.0.2'
-
 
   # Pods for TestingIgnore
 
